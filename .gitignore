@@ -1,5 +1,9 @@
 simple_server/node_modules/
+serve_html/node_modules/
+simple_server_2/node_modules
 journal.txt
+
+
 # Logs
 logs
 *.log
