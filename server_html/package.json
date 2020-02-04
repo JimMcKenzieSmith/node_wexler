@@ -1,0 +1,16 @@
+{
+  "name": "server_html",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start" : "node main.js",
+    "dev" : "nodemon main.js"
+  },
+  "dependencies": {
+    "http-status-codes": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
