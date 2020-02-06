@@ -16,7 +16,7 @@ const routes = {
     },
     '/' : (req, res) => {
       res.writeHead(httpStatus.OK, {'Content-Type' : 'text/html'})
-      res.end('This is the index page')
+      customReadFile(`views/index.html`, res)
     },
     '/index.html' : (req, res) => {
       res.writeHead(httpStatus.OK, {'Content-Type' : 'text/html'})
@@ -28,7 +28,7 @@ const routes = {
   }
 }
 
-exports.handle = (req, res) => {
+const handle = (req, res) => {
   try {
     if(routes[req.method][req.url]){
       routes[req.method][req.url](req, res)
@@ -39,4 +39,8 @@ exports.handle = (req, res) => {
   } catch (error) {
     console.log(error)
   }
+}
+
+module.exports = {
+  handle
 }
