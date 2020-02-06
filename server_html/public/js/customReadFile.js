@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 
-exports.customReadFile = (file, res) => {
+const customReadFile = (file, res) => {
   fs.readFile(file, (errors ,data) => {
     if(errors) {
       res.end('Error reading the file')
@@ -12,3 +12,4 @@ exports.customReadFile = (file, res) => {
   })
 }
 
+module.exports = customReadFile

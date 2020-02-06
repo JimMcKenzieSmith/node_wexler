@@ -1,0 +1,6 @@
+{
+  "name" : "Adoniram",
+  "cities" : ["Miami", "London", "Tokyo"],
+  "length" : 20,
+  "isTrue" : true
+}
